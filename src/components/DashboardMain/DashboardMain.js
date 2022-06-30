@@ -10,7 +10,7 @@ import { useAuthcontext } from "../../hooks/useAuthContext";
 import DayDashboard from "../DayDashboard/DayDashboard";
 import {Link} from "react-router-dom"
 import React from "react";
-
+import Box from "@mui/material/Box"
 const DashboardMain = () => {
   const { user } = useAuthcontext();
   const { belge } = useCollection("dashboard1", ["uid", "==", user.uid]);
@@ -25,7 +25,7 @@ const DashboardMain = () => {
               <div className="col-md-4">
                 <div
                   className="card"
-                  style={{ boxShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}
+                  style={{ boxShadow: "1px 1px 2px rgba(0,0,0,0.5)",marginBottom:"10px"}}
                 >
                   <div className="card-body">
                     <LeftDash belgeler={belge} />
@@ -59,19 +59,21 @@ const DashboardMain = () => {
           <Container style={{ marginTop: "30px" }}>
             <div className="row">
               <div className="col-md-6">
-                <div
+                <Box
                   className="card"
-                  style={{ boxShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}
+                  style={{ boxShadow: "1px 1px 2px rgba(0,0,0,0.5)",marginBottom:"10px" }}
+                  sx={{display:{ xs: "none", md: "flex" }}}
                 >
                   <div className="card-body">
                     <PieCharts belgeler={belge} />
                   </div>
-                </div>
+                </Box>
               </div>
               <div className="col-md-6">
                 <div
                   className="card"
                   style={{ boxShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}
+
                 >
                   <div className="card-body">
                     <LineChart belgeler={belge} />
