@@ -36,6 +36,6 @@ export const useCollection = (col, _query, _orderBy) => {
       }
     );
     return () => unsub();
-  },[col]);
+  },[col,oBy,q]);
   return { belge, error };
 };
