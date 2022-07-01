@@ -269,7 +269,7 @@ const EarningPage = ({ uid }) => {
             id="username"
             value={hafta2}
             onChange={(e) => setHafta2(e.target.value)}
-            label="1.Haftalık Kazanç"
+            label="2.Haftalık Kazanç"
             type="number"
              
             InputProps={{
@@ -289,8 +289,9 @@ const EarningPage = ({ uid }) => {
             id="username"
             value={hafta3}
             onChange={(e) => setHafta3(e.target.value)}
-            label="2.Haftalık Kazanç"
-            type="number"
+            label="3.Haftalık Kazanç"
+            type="nu
+            mber"
              
             InputProps={{
               endAdornment: (
@@ -309,7 +310,7 @@ const EarningPage = ({ uid }) => {
             id="username"
             value={hafta4}
             onChange={(e) => setHafta4(e.target.value)}
-            label="3.Haftalık Kazanç"
+            label="4.Haftalık Kazanç"
             type="number"
              
             InputProps={{
