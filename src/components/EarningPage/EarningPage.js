@@ -120,13 +120,14 @@ const EarningPage = ({ uid }) => {
             autoComplete="given-name"
             name="username"
             required
+            autoFocus
             fullWidth
             id="username"
             label="Pazartesi Kazanç"
             value={pazartesi}
             onChange={(e) => setPazartesi(e.target.value)}
             type="number"
-            autoFocus
+             
             sx={{ mb: 2 }}
             InputProps={{
               endAdornment: (
@@ -146,7 +147,7 @@ const EarningPage = ({ uid }) => {
             value={sali}
             onChange={(e) => setSali(e.target.value)}
             type="number"
-            autoFocus
+             
             sx={{ mb: 2 }}
             InputProps={{
               endAdornment: (
@@ -167,7 +168,7 @@ const EarningPage = ({ uid }) => {
             onChange={(e) => setÇarşamba(e.target.value)}
             label="Çarşamba Kazanç"
             type="number"
-            autoFocus
+             
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
@@ -187,7 +188,7 @@ const EarningPage = ({ uid }) => {
             type="number"
             value={perşembe}
             onChange={(e) => setPerşembe(e.target.value)}
-            autoFocus
+             
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
@@ -207,7 +208,7 @@ const EarningPage = ({ uid }) => {
             value={cuma}
             onChange={(e) => setCuma(e.target.value)}
             type="number"
-            autoFocus
+             
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
@@ -227,7 +228,7 @@ const EarningPage = ({ uid }) => {
             type="number"
             value={cumartesi}
             onChange={(e) => setCumartesi(e.target.value)}
-            autoFocus
+             
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
@@ -247,7 +248,7 @@ const EarningPage = ({ uid }) => {
             value={pazar}
             onChange={(e) => setPazar(e.target.value)}
             type="number"
-            autoFocus
+             
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
@@ -270,7 +271,7 @@ const EarningPage = ({ uid }) => {
             onChange={(e) => setHafta2(e.target.value)}
             label="1.Haftalık Kazanç"
             type="number"
-            autoFocus
+             
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
@@ -290,7 +291,7 @@ const EarningPage = ({ uid }) => {
             onChange={(e) => setHafta3(e.target.value)}
             label="2.Haftalık Kazanç"
             type="number"
-            autoFocus
+             
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
@@ -310,7 +311,7 @@ const EarningPage = ({ uid }) => {
             onChange={(e) => setHafta4(e.target.value)}
             label="3.Haftalık Kazanç"
             type="number"
-            autoFocus
+             
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
