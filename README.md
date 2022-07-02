@@ -23,3 +23,6 @@ Uygulamada kullandıklarım aşağıda bulunmaktadır :
 * materialui
 * bootstrap
 * responsive
+
+![](https://i.hizliresim.com/5ye58xh.PNG)
+![](https://i.hizliresim.com/2ndsn0v.PNG)
