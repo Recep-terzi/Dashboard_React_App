@@ -290,8 +290,7 @@ const EarningPage = ({ uid }) => {
             value={hafta3}
             onChange={(e) => setHafta3(e.target.value)}
             label="3.Haftalık Kazanç"
-            type="nu
-            mber"
+            type="number"
              
             InputProps={{
               endAdornment: (
